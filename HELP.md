@@ -21,4 +21,6 @@ The following guides illustrate how to use some features concretely:
 * [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
 
 http://localhost:8081/catalog/foo
+http://localhost:8761
+http://localhost:8081/hystrix
 
