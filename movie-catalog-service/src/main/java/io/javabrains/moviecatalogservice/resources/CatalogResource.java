@@ -27,25 +27,38 @@ public class CatalogResource {
     @Autowired
     WebClient.Builder webClientBuilder;
 
-    @HystrixCommand(fallbackMethod = "getFallBackCatalog")
     @RequestMapping("/{userId}")
     public List<CatalogItem> getCatalog(@PathVariable("userId") String userId) {
 
-        UserRating userRating = restTemplate.getForObject("http://ratings-data-service/ratingsdata/user/" + userId, UserRating.class);
+        UserRating userRating = getUserRating(userId);
 
         return userRating.getRatings().stream()
-                .map(rating -> {
-                    Movie movie = restTemplate.getForObject("http://movie-info-service/movies/" + rating.getMovieId(), Movie.class);
-                    return new CatalogItem(movie.getName(), movie.getDescription(), rating.getRating());
-                })
+                .map(rating -> getCatalogItem(rating))
                 .collect(Collectors.toList());
 
     }
 
-    private List<CatalogItem> getFallBackCatalog(@PathVariable("userId") String userId) {
+    @HystrixCommand(fallbackMethod = "getFallBackCatalogItem")
+    private CatalogItem getCatalogItem(Rating rating) {
+        Movie movie = restTemplate.getForObject("http://movie-info-service/movies/" + rating.getMovieId(), Movie.class);
+        return new CatalogItem(movie.getName(), movie.getDescription(), rating.getRating());
+    }
 
-        return Arrays.asList(new CatalogItem("No movie","No", 0));
+    private CatalogItem getFallBackCatalogItem(Rating rating) {
+        CatalogItem catalogItem = new CatalogItem("No movie", "", rating.getRating());
+        return catalogItem;
+    }
 
+    @HystrixCommand(fallbackMethod = "getFallBackUserRating")
+    private UserRating getUserRating(@PathVariable("userId") String userId) {
+        return restTemplate.getForObject("http://ratings-data-service/ratingsdata/user/" + userId, UserRating.class);
+    }
+
+    private UserRating getFallBackUserRating(@PathVariable("userId") String userId) {
+        UserRating userRating = new UserRating();
+        userRating.setUserId(userId);
+        userRating.setRatings(Arrays.asList(new Rating("0", 0)));
+        return userRating;
     }
 
 }
