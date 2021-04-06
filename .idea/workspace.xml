@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0d94fdd-6099-4aa5-9527-087f3956124e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/services/MovieInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/services/UserRatingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/resources/CatalogResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/resources/CatalogResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/services/MovieInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/services/MovieInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/services/UserRatingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/services/UserRatingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617705236184</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Hystrix two services with fallback methods extracted">
+      <created>1617706708465</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617706708465</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,8 +170,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
     <MESSAGE value="Hystrix simply functionality added" />
-    <MESSAGE value="Hystrix two fallback methods extracted, but not works, because of proxy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hystrix two fallback methods extracted, but not works, because of proxy" />
+    <MESSAGE value="Hystrix: two fallback methods extracted, but not works, because of proxy" />
+    <MESSAGE value="Hystrix: two services with fallback methods extracted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hystrix: two services with fallback methods extracted" />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="181" width="1579" height="685" key="#Project_Structure" timestamp="1617695596291">
@@ -183,10 +191,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="810" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1617694948085" />
-    <state x="457" y="214" key="CommitChangelistDialog2" timestamp="1617705234817">
+    <state x="457" y="214" key="CommitChangelistDialog2" timestamp="1617706707167">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="457" y="214" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1617705234817" />
+    <state x="457" y="214" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1617706707167" />
     <state width="429" height="466" key="DebuggerActiveHint" timestamp="1617699996354">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -199,26 +207,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="662" y="264" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1617695820478" />
-    <state x="577" y="418" key="GitRewordDialog" timestamp="1617705286423">
+    <state x="577" y="418" key="GitRewordDialog" timestamp="1617706754097">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="577" y="418" key="GitRewordDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1617705286423" />
-    <state width="1841" height="270" key="GridCell.Tab.0.bottom" timestamp="1617706630437">
+    <state x="577" y="418" key="GitRewordDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1617706754097" />
+    <state width="1841" height="333" key="GridCell.Tab.0.bottom" timestamp="1617708842550">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1617706630437" />
-    <state width="1841" height="270" key="GridCell.Tab.0.center" timestamp="1617706630437">
+    <state width="1841" height="333" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1617708842550" />
+    <state width="1841" height="333" key="GridCell.Tab.0.center" timestamp="1617708842549">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="270" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1617706630437" />
-    <state width="1841" height="270" key="GridCell.Tab.0.left" timestamp="1617706630437">
+    <state width="1841" height="333" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1617708842549" />
+    <state width="1841" height="333" key="GridCell.Tab.0.left" timestamp="1617708842549">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="270" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1617706630437" />
-    <state width="1841" height="270" key="GridCell.Tab.0.right" timestamp="1617706630437">
+    <state width="1841" height="333" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1617708842549" />
+    <state width="1841" height="333" key="GridCell.Tab.0.right" timestamp="1617708842549">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="270" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1617706630437" />
+    <state width="1841" height="333" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1617708842549" />
     <state width="1841" height="225" key="GridCell.Tab.1.bottom" timestamp="1617700420212">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -243,6 +251,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="463" y="162" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1617398100383" />
+    <state x="554" y="256" key="Vcs.Push.Dialog.v2" timestamp="1617706970380">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="554" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1617706970380" />
     <state x="778" y="301" key="chooseDestDirectoryDialog" timestamp="1617694685252">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
