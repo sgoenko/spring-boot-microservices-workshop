@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b0d94fdd-6099-4aa5-9527-087f3956124e" name="Default Changelist" comment="" />
+    <list default="true" id="b0d94fdd-6099-4aa5-9527-087f3956124e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/MovieCatalogServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/MovieCatalogServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/resources/CatalogResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/resources/CatalogResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +32,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548212413544" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/movie-info-service/src/main/java/io/javabrains" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -33,7 +41,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.MovieInfoServiceApplication">
+  <component name="RunManager" selected="Application.MovieCatalogServiceApplication">
     <configuration name="DiscoveryServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.javabrains.discoveryserver.DiscoveryServerApplication" />
       <module name="discovery-server" />
@@ -88,9 +96,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MovieCatalogServiceApplication" />
         <item itemvalue="Application.MovieInfoServiceApplication" />
         <item itemvalue="Application.RatingsDataServiceApplication" />
-        <item itemvalue="Application.MovieCatalogServiceApplication" />
         <item itemvalue="Application.DiscoveryServerApplication" />
       </list>
     </recent_temporary>
@@ -106,7 +114,30 @@
       <option name="presentableId" value="Default" />
       <updated>1548212355281</updated>
     </task>
+    <task id="LOCAL-00001" summary="Init">
+      <created>1617697656811</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617697656811</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init" />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="181" width="1579" height="685" key="#Project_Structure" timestamp="1617695596291">
@@ -125,26 +156,50 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="810" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1617694948085" />
+    <state x="457" y="214" key="CommitChangelistDialog2" timestamp="1617697652225">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="457" y="214" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1617697652225" />
+    <state width="429" height="466" key="DebuggerActiveHint" timestamp="1617699996354">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="429" height="466" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1617699996354" />
     <state x="662" y="264" key="FileChooserDialogImpl" timestamp="1617695820478">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="662" y="264" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1617695820478" />
-    <state width="1841" height="270" key="GridCell.Tab.0.bottom" timestamp="1617696165498">
+    <state width="1841" height="270" key="GridCell.Tab.0.bottom" timestamp="1617703516134">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1617696165498" />
-    <state width="1841" height="270" key="GridCell.Tab.0.center" timestamp="1617696165498">
+    <state width="1841" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1617703516134" />
+    <state width="1841" height="270" key="GridCell.Tab.0.center" timestamp="1617703516134">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="270" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1617696165498" />
-    <state width="1841" height="270" key="GridCell.Tab.0.left" timestamp="1617696165497">
+    <state width="1841" height="270" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1617703516134" />
+    <state width="1841" height="270" key="GridCell.Tab.0.left" timestamp="1617703516134">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="270" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1617696165497" />
-    <state width="1841" height="270" key="GridCell.Tab.0.right" timestamp="1617696165498">
+    <state width="1841" height="270" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1617703516134" />
+    <state width="1841" height="270" key="GridCell.Tab.0.right" timestamp="1617703516134">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="270" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1617696165498" />
+    <state width="1841" height="270" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1617703516134" />
+    <state width="1841" height="225" key="GridCell.Tab.1.bottom" timestamp="1617700420212">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1841" height="225" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1617700420212" />
+    <state width="1841" height="225" key="GridCell.Tab.1.center" timestamp="1617700420211">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1841" height="225" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1617700420211" />
+    <state width="1841" height="225" key="GridCell.Tab.1.left" timestamp="1617700420211">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1841" height="225" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1617700420211" />
+    <state width="1841" height="225" key="GridCell.Tab.1.right" timestamp="1617700420211">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1841" height="225" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1617700420211" />
     <state x="627" y="222" key="NewModule_or_Project.wizard" timestamp="1617695825139">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -165,5 +220,16 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="265" y="143" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1617695521979" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/movie-info-service/src/main/java/io/javabrains/movieinfoservice/resources/MovieResource.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
