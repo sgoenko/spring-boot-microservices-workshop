@@ -5,6 +5,8 @@ import io.javabrains.moviecatalogservice.models.CatalogItem;
 import io.javabrains.moviecatalogservice.models.Movie;
 import io.javabrains.moviecatalogservice.models.Rating;
 import io.javabrains.moviecatalogservice.models.UserRating;
+import io.javabrains.moviecatalogservice.services.MovieInfoService;
+import io.javabrains.moviecatalogservice.services.UserRatingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,39 +29,23 @@ public class CatalogResource {
     @Autowired
     WebClient.Builder webClientBuilder;
 
+    @Autowired
+    MovieInfoService movieInfoService;
+
+    @Autowired
+    UserRatingService userRatingService;
+
     @RequestMapping("/{userId}")
     public List<CatalogItem> getCatalog(@PathVariable("userId") String userId) {
 
-        UserRating userRating = getUserRating(userId);
+        UserRating userRating = userRatingService.getUserRating(userId);
 
         return userRating.getRatings().stream()
-                .map(rating -> getCatalogItem(rating))
+                .map(rating -> movieInfoService.getCatalogItem(rating))
                 .collect(Collectors.toList());
 
     }
 
-    @HystrixCommand(fallbackMethod = "getFallBackCatalogItem")
-    private CatalogItem getCatalogItem(Rating rating) {
-        Movie movie = restTemplate.getForObject("http://movie-info-service/movies/" + rating.getMovieId(), Movie.class);
-        return new CatalogItem(movie.getName(), movie.getDescription(), rating.getRating());
-    }
-
-    private CatalogItem getFallBackCatalogItem(Rating rating) {
-        CatalogItem catalogItem = new CatalogItem("No movie", "", rating.getRating());
-        return catalogItem;
-    }
-
-    @HystrixCommand(fallbackMethod = "getFallBackUserRating")
-    private UserRating getUserRating(@PathVariable("userId") String userId) {
-        return restTemplate.getForObject("http://ratings-data-service/ratingsdata/user/" + userId, UserRating.class);
-    }
-
-    private UserRating getFallBackUserRating(@PathVariable("userId") String userId) {
-        UserRating userRating = new UserRating();
-        userRating.setUserId(userId);
-        userRating.setRatings(Arrays.asList(new Rating("0", 0)));
-        return userRating;
-    }
 
 }
 
