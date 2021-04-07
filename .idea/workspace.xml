@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b0d94fdd-6099-4aa5-9527-087f3956124e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/services/MovieInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/io/javabrains/moviecatalogservice/services/MovieInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ratings-data-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-config/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-config/src/main/java/io/javabrains/springbootconfig/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-config/src/main/java/io/javabrains/springbootconfig/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-config/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-config/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +42,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548212413544" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/movie-info-service/src/main/java/io/javabrains" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-config" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -50,7 +53,7 @@
       <recent name="io.javabrains.moviecatalogservice.services" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MovieCatalogServiceApplication">
+  <component name="RunManager" selected="Application.SpringBootConfigApplication">
     <configuration name="DiscoveryServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.javabrains.discoveryserver.DiscoveryServerApplication" />
       <module name="discovery-server" />
@@ -103,8 +106,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringBootConfigApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.javabrains.springbootconfig.SpringBootConfigApplication" />
+      <module name="spring-boot-config" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.javabrains.springbootconfig.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringBootConfigApplication" />
         <item itemvalue="Application.MovieCatalogServiceApplication" />
         <item itemvalue="Application.MovieInfoServiceApplication" />
         <item itemvalue="Application.RatingsDataServiceApplication" />
@@ -165,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617709913152</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Builkhead properties added">
+      <created>1617713524667</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617713524667</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Reading properties from config added">
+      <created>1617803097516</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617803097517</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,7 +204,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -186,13 +219,15 @@
     <MESSAGE value="Hystrix: two services with fallback methods extracted" />
     <MESSAGE value="Hystrix parameters added" />
     <MESSAGE value="Hystrix Dashboard added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hystrix Dashboard added" />
+    <MESSAGE value="Builkhead properties added" />
+    <MESSAGE value="Reading properties from config added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reading properties from config added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="93" y="181" width="1579" height="685" key="#Project_Structure" timestamp="1617695596291">
+    <state x="93" y="181" width="1579" height="685" key="#Project_Structure" timestamp="1617802666195">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="93" y="181" width="1579" height="685" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1617695596291" />
+    <state x="93" y="181" width="1579" height="685" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1617802666195" />
     <state x="502" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617694546829">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -205,78 +240,78 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="810" y="412" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1617694948085" />
-    <state x="457" y="214" key="CommitChangelistDialog2" timestamp="1617709911163">
+    <state x="457" y="214" key="CommitChangelistDialog2" timestamp="1617803095558">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="457" y="214" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1617709911163" />
+    <state x="457" y="214" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1617803095558" />
     <state width="429" height="466" key="DebuggerActiveHint" timestamp="1617699996354">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="429" height="466" key="DebuggerActiveHint/0.0.1920.1080@0.0.1920.1080" timestamp="1617699996354" />
-    <state x="112" y="105" width="1701" height="838" key="DiffContextDialog" timestamp="1617703668258">
+    <state x="112" y="105" width="1701" height="838" key="DiffContextDialog" timestamp="1617803185061">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="112" y="105" width="1701" height="838" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1617703668258" />
-    <state x="662" y="264" key="FileChooserDialogImpl" timestamp="1617695820478">
+    <state x="112" y="105" width="1701" height="838" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1617803185061" />
+    <state x="662" y="264" key="FileChooserDialogImpl" timestamp="1617801705636">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="662" y="264" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1617695820478" />
+    <state x="662" y="264" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1617801705636" />
     <state x="577" y="418" key="GitRewordDialog" timestamp="1617706754097">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="577" y="418" key="GitRewordDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1617706754097" />
-    <state width="1841" height="333" key="GridCell.Tab.0.bottom" timestamp="1617713435312">
+    <state width="1841" height="235" key="GridCell.Tab.0.bottom" timestamp="1617803881465">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="333" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1617713435312" />
-    <state width="1841" height="333" key="GridCell.Tab.0.center" timestamp="1617713435312">
+    <state width="1841" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1617803881465" />
+    <state width="1841" height="235" key="GridCell.Tab.0.center" timestamp="1617803881465">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="333" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1617713435312" />
-    <state width="1841" height="333" key="GridCell.Tab.0.left" timestamp="1617713435312">
+    <state width="1841" height="235" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1617803881465" />
+    <state width="1841" height="235" key="GridCell.Tab.0.left" timestamp="1617803881465">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="333" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1617713435312" />
-    <state width="1841" height="333" key="GridCell.Tab.0.right" timestamp="1617713435312">
+    <state width="1841" height="235" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1617803881465" />
+    <state width="1841" height="235" key="GridCell.Tab.0.right" timestamp="1617803881465">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="333" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1617713435312" />
-    <state width="1841" height="225" key="GridCell.Tab.1.bottom" timestamp="1617700420212">
+    <state width="1841" height="235" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1617803881465" />
+    <state width="1841" height="225" key="GridCell.Tab.1.bottom" timestamp="1617713700250">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="225" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1617700420212" />
-    <state width="1841" height="225" key="GridCell.Tab.1.center" timestamp="1617700420211">
+    <state width="1841" height="225" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1617713700250" />
+    <state width="1841" height="225" key="GridCell.Tab.1.center" timestamp="1617713700250">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="225" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1617700420211" />
-    <state width="1841" height="225" key="GridCell.Tab.1.left" timestamp="1617700420211">
+    <state width="1841" height="225" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1617713700250" />
+    <state width="1841" height="225" key="GridCell.Tab.1.left" timestamp="1617713700250">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="225" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1617700420211" />
-    <state width="1841" height="225" key="GridCell.Tab.1.right" timestamp="1617700420211">
+    <state width="1841" height="225" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1617713700250" />
+    <state width="1841" height="225" key="GridCell.Tab.1.right" timestamp="1617713700250">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1841" height="225" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1617700420211" />
-    <state x="627" y="222" key="NewModule_or_Project.wizard" timestamp="1617695825139">
+    <state width="1841" height="225" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1617713700250" />
+    <state x="627" y="222" key="NewModule_or_Project.wizard" timestamp="1617801710166">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="627" y="222" key="NewModule_or_Project.wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1617695825139" />
+    <state x="627" y="222" key="NewModule_or_Project.wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1617801710166" />
     <state x="463" y="162" key="SettingsEditor" timestamp="1617398100383">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="463" y="162" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1617398100383" />
-    <state x="554" y="256" key="Vcs.Push.Dialog.v2" timestamp="1617709919917">
+    <state x="554" y="256" key="Vcs.Push.Dialog.v2" timestamp="1617713537582">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="554" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1617709919917" />
+    <state x="554" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1617713537582" />
     <state x="778" y="301" key="chooseDestDirectoryDialog" timestamp="1617694685252">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="778" y="301" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1617694685252" />
-    <state x="658" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1617697548254">
+    <state x="658" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1617801660308">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="658" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1617697548254" />
+    <state x="658" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1617801660308" />
     <state x="692" y="278" key="extract.method.dialog" timestamp="1617704138223">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
